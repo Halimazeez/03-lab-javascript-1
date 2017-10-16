@@ -1,21 +1,24 @@
 (function(){
 
-  var myName = document.getElementById("my-name"); 
-  var userName = document.getElementById("user-name"); 
-  var getName = document.getElementById("get-name");
-  var myHeader = document.getElementById("my-header");
+  let myName = document.getElementById("my-name"); 
+  let userName = document.getElementById("user-name"); 
+  let getName = document.getElementById("get-name");
+  let myHeader = document.getElementById("my-header");
 
   function PerformGreeting() {
     myName.innerHTML = userName.value;
-    myHeader.innerHTML = userName.value;
+    myHeader.innerHTML = userName.value + "!";
     myHeader.classList.add("change-me");
-    //NOT myHeader.className += " otherclass";
+    //DO NOT: myHeader.className += " otherclass";
     
-    event.preventDefault(); // disables default form submission
-    return false; // prevents further "bubbling" up of event
+    event.preventDefault();
+    return false;
   }
 
-  // avoid JavaScript in HTML markup (e.g. no "onclick" in HTML tags)
-  getName.addEventListener("submit", PerformGreeting);
+  if (typeof event === "undefined") {
+    getName.onsubmit = PerformGreeting; //Firefox
+  } else {
+    getName.addEventListener("submit", PerformGreeting);
+  }
 
 }());

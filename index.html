@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <title>Javascript: Event Listener</title>
   <style>
-    #get-name { background: #eee; padding: 0.5em; }
-    .change-me { background: #ffc;}
+    #get-name {
+      background: #eee;
+      padding: 0.5em;
+    }
+    .change-me {
+      background: #333;
+      color: #eee;
+      padding-left: 0.25em
+    }
   </style>
 </head>
 <body>
-  <h1 id="my-header">you</h1>
+  <h1 id="my-header">Who are you?</h1>
   <p>Hello, <span id="my-name">anonymous user</span>!</p>
 
   <form id="get-name" action="#" method="post">
@@ -18,12 +25,6 @@
     <input type="submit">
   </form>
 
-  <!--
-    try loading the script tag inside the head section, then check the 
-    browser's JavaScript console (inspect element).
-
-    Can you work out what the problem is?
-  -->
   <script src="js/greeting.js"></script>
 </body>
 </html>
