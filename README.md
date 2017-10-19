@@ -1,8 +1,15 @@
 # A simple introduction to JavaScript and the DOM
 
-If you have GIT available, *clone* this repository using `git clone https://github.com/CTEC3905/03-lab-javascript-1.git` instead of just downloading it.
+If you have GIT available, *clone* this repository as follows:
 
-You must then create *your own repository on GitHub* for these files, then change the GIT remote to the GitHub URL for your new repository with the following commands:
+- open the folder where you want to work, don't create a new folder for the exercise
+- open a command-line terminal to that folder
+- type `git clone https://github.com/CTEC3905/03-lab-javascript-1.git`
+- check in your folder, you should see a new folder "03-lab-javascript-1"
+- move into that folder with `cd 03-lab-javascript-1`
+- type `git remote -v` and you will see the URL above, which needs changing…
+
+First, create *your own repository on GitHub* for these files, then change the GIT remote to the GitHub URL for your new repository with the following commands:
 
 - `git remote set-url origin [YOUR_REPO_URL_HERE]`
 
