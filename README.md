@@ -19,9 +19,9 @@ then check your remote is your own repository with:
 
 This exercise introduces a few fundamental Javascript principles:
 
-- *immediately-invoked function expressions (IIFE)* (stay out of the global namespace)
-- *event listeners* (for capturing user actions)
-- *DOM manipulation* (for dynamically changing HTML elements and/or their properties)
+- **immediately-invoked function expressions (IIFE)** (stay out of the global namespace)
+- **event listeners** (for capturing user actions)
+- **DOM manipulation** (for dynamically changing HTML elements and/or their properties)
 
 Read through the comments in the "greetings-comments.js" code and try out the suggestions in "greetings.js".
 
