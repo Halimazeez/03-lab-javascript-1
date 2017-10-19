@@ -4,8 +4,7 @@ If you have GIT available, *clone* this repository using `git clone https://gith
 
 You must then create *your own repository on GitHub* for these files, then change the GIT remote to the GitHub URL for your new repository with the following commands:
 
-- `git remote rm origin`
-- `git remote add origin [YOUR_REPO_URL_HERE]`
+- `git remote set-url origin [YOUR_REPO_URL_HERE]`
 
 then check your remote is your own repository with:
 
